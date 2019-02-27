@@ -1,4 +1,4 @@
-# Resume
+# Resume (Fall 2019)
 
 ## Building
 Assumes [MacTeX](http://www.tug.org/mactex/).
