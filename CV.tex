@@ -1,0 +1,227 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% -*- coding: UTF-8; -*-
+% vim: set fenc=utf-8
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% SIMPLE-RESUME-CV
+%% <https://github.com/zachscrivena/simple-resume-cv>
+%% This is free and unencumbered software released into the
+%% public domain; see <http://unlicense.org> for details.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% See "README.md" for instructions on compiling this document.
+
+\documentclass[letterpaper,MMMyyyy,nonstopmode]{simpleresumecv}
+% Class options:
+% a4paper, letterpaper, nonstopmode, draftmode
+% MMMyyyy, ddMMMyyyy, MMMMyyyy, ddMMMMyyyy, yyyyMMdd, yyyyMM, yyyy
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% PREAMBLE.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% CV Info (to be customized).
+\newcommand{\CVAuthor}{Theodore Bauer}
+\newcommand{\CVTitle}{}
+\newcommand{\CVNote}{}
+\newcommand{\CVWebpage}{github.com/tedbauer}
+
+% PDF settings and properties.
+\hypersetup{
+pdftitle={\CVTitle},
+pdfauthor={\CVAuthor},
+pdfsubject={\CVWebpage},
+pdfcreator={XeLaTeX},
+pdfproducer={},
+pdfkeywords={},
+unicode=true,
+bookmarks=true,
+bookmarksopen=true,
+pdfstartview=FitH,
+pdfpagelayout=OneColumn,
+pdfpagemode=UseOutlines,
+hidelinks,
+breaklinks}
+
+% Shorthand.
+\newcommand{\Code}[1]{\mbox{\textbf{#1}}}
+\newcommand{\CodeCommand}[1]{\mbox{\textbf{\textbackslash{#1}}}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% ACTUAL DOCUMENT.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%%%%%%%%%%%%%%%
+% TITLE BLOCK %
+%%%%%%%%%%%%%%%
+
+\Title{\CVAuthor}
+
+\begin{SubTitle}
+tjb272@cornell.edu
+\,\SubBulletSymbol\,
+github.com/tedbauer
+\,\SubBulletSymbol\,
+\,(832)\,330-5858
+\end{SubTitle}
+
+\begin{Body}
+%%%%%%%%%%%%%%%
+%% EDUCATION %%
+%%%%%%%%%%%%%%%
+
+\Section
+{Education}
+{Education}
+{PDF:Education}
+
+\Entry
+{\textbf{Cornell University, College of Arts and Sciences}},
+Ithaca, NY
+\Gap
+\BulletItem
+B.A. in Computer Science
+\hfill
+Expected May 2019
+\begin{Detail}
+\SubBulletItem
+GPA: 3.50 / 4.00
+\SubBulletItem
+Selected Coursework: Programming Languages and Logics, Functional Programming, \newline Operating Systems (with Practicum), Object-Oriented Programming, Discrete Structures, \newline Computer System Organization, Analysis of Algorithms, Database Systems, \newline Probability Models and Inference, Seminar in Programming Languages
+\end{Detail}
+
+%%%%%%%%%%%%%%%%%%%%%%%
+%% CAMPUS ACTIVITIES %%
+%%%%%%%%%%%%%%%%%%%%%%%
+
+\Section
+{Skills}
+{}
+{}
+
+\textbf{General Programming:} Python, OCaml, C, Java, C++
+\Gap
+\textbf{Web Development:}  PHP, SQL, HTML/CSS, JavaScript, Bootstrap
+\Gap
+\textbf{Tools:} Git, Vim, CircleCI, Shell Scripting, \LaTeX, Make, Dune, Gradle
+
+\Section
+{Experience}{}{}
+
+\Entry
+\textbf{Cornell Capra Research Group}, Ithaca, NY
+\Gap
+\BulletItem Undergraduate Researcher
+\hfill Mar. 2018 - Present
+
+\begin{Detail}
+\SubBulletItem Designed language semantics and type system for Seashell, a hardware \newline programming language, advised by Professor Adrian Sampson
+\SubBulletItem Implemented compiler from scratch with OCaml
+\SubBulletItem Proved correctness of memory access language construct
+\SubBulletItem Wrote Vim syntax highlighting plugin
+
+\end{Detail}
+
+\Gap
+
+\Entry
+\textbf{Rev: Ithaca Startup Works},
+Ithaca, NY
+
+\Gap
+\BulletItem
+Software Engineering Intern
+\hfill
+Oct. 2016 -- Aug. 2017
+\begin{Detail}
+\SubBulletItem
+Worked on technical staff for 11 week Cornell-run Rev Hardware Accelerator
+\SubBulletItem
+Developed hardware/software prototyping workshop for entrepreneurs showcasing \newline "toy" IoT product development; built communication device with a Particle Photon \newline board that interfaced with an Apache/MySQL/PHP server application
+\end{Detail}
+\Section{Projects}{}{}
+
+\BulletItem
+\textbf{``A Lonely Alpaca" puzzle video game}
+\hfill
+Aug. 2018 - Dec. 2018
+\begin{Detail}
+\Item
+Implemented with Unity and C\# alongside 2 other developers and 2 designers
+\SubBulletItem Non-exclusive license for game purchased by Coolmath Games 
+\SubBulletItem Recognized on front page of Newgrounds.com
+\end{Detail}
+
+
+\Gap
+\BulletItem
+\textbf{EG Operating System Abstractions}
+\hfill
+Aug. 2018 - Dec. 2018
+\begin{Detail}
+\Item
+Implemented in C:
+\SubBulletItem A fully-featured FAT filesystem
+\SubBulletItem A user-level threading and semaphore interface
+\SubBulletItem A multiprocess interface with a multi-level feedback queue
+\end{Detail}
+
+\Gap
+
+\BulletItem
+\textbf{``Home Away from Gnome" pseudo-3D video game}
+\hfill
+Dec. 2018 - Jun. 2018
+\begin{Detail}
+\Item
+Designed and implemented with Java, libGDX and Gradle alongside 3 other developers \newline and 2 designers over the course of one semester for the Cornell Game Design Initiative
+\end{Detail}
+
+\Gap
+\BulletItem
+\textbf{Yacgb Game Boy Emulator}
+\hfill
+Feb. 2019
+\begin{Detail}
+\Item
+Implemented with C and SDL2; features simulated CPU and GPU
+\end{Detail}
+
+\Section{Teaching}{}{}
+
+\BulletItem CS 2043: Unix Tools and Scripting (TA) \hfill Spring 2019
+\BulletItem CS 3110: Functional Programming and Data Structures (TA) \hfill Spring 2018, Fall 2018
+\BulletItem CS 4410: Operating Systems (TA) \hfill Summer 2018
+\BulletItem CS 1110: Introduction to Computing with Python (Consultant) \hfill Fall 2017
+
+\Section
+{Awards}{}{}
+\BulletItem
+\textbf{ELI Research Award}, to fund Seashell, a hardware accelerator language
+
+\BulletItem
+\textbf{Teaching Assistant Award}, for outstanding contributions to CS 3110 staff
+
+\Section
+{Campus Involvement}{}{}
+
+\BulletItem
+\textbf{Mary Donlon Hall Resident Advisor (RA)}
+\hfill
+Jun. 2016 - May 2018
+
+\BulletItem
+\textbf{Association of CS Undergraduates (ACSU) Mentor}
+\hfill
+Aug. 2018 - Present
+
+%%%%%%%%%%%%
+%% SKILLS %%
+%%%%%%%%%%%%
+
+\end{Body}
+
+\end{document}
